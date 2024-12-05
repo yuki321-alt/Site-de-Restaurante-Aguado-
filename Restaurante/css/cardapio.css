@@ -1,0 +1,136 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #201105;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header img {
+    margin-left: 3em;
+}
+
+nav {
+    color: #ffffff;
+    margin-left: 30%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1em;
+    background-color: #2c1807;
+}
+
+nav ul li {
+    display: inline;
+    margin: 2em;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: larger;
+    background-color: #2c1807;
+    text-decoration: none;
+    position: relative;  
+    padding-bottom: 5px;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a::after {
+    content: "";  
+    position: absolute;
+    bottom: 0;  
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #ffbf53; 
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffbf53;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    width: 100%; 
+    flex-flow: row wrap;
+}
+
+.massas{
+    display: flex;
+    gap: 50px 50px;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #201105;
+}
+
+.doces{
+    display: flex;
+    gap: 50px 50px;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #201105;
+}
+
+.visu{
+    display: none;
+    width: 100%;
+}
+
+.abre{
+    color: #000000 ;
+    margin-left: 2em;
+    cursor: pointer;
+    background-color: #ffbf53;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+}
+
+.item{
+    width: 330px;
+    height: 360px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffbf53;
+}
+
+header a{
+    align-self: center;
+}
+
+
+
+/* Footer */
+footer {
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: #ffbf53;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
